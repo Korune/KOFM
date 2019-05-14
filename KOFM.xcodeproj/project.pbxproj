@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		04D5309E228AC3AF00A7C755 /* YYWeakProxy.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D5309A228AC3AF00A7C755 /* YYWeakProxy.m */; };
+		04D5309F228AC3AF00A7C755 /* YYFPSLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 04D5309B228AC3AF00A7C755 /* YYFPSLabel.m */; };
+		04D530A1228AC4E300A7C755 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 04D530A0228AC4E300A7C755 /* README.md */; };
 		0B6240E1CD57DF9B6640EE6A /* libPods-KOFMUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 50A74662C6D2CBCC1C6F24C2 /* libPods-KOFMUITests.a */; };
 		13130CBD856A305B81CD6F73 /* libPods-KOFMTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FE6F39C22B95B4A13142AAC /* libPods-KOFMTests.a */; };
 		5D0B6D6F21BE960400CF3FF8 /* KOTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D0B6D6E21BE960400CF3FF8 /* KOTableViewCell.m */; };
@@ -66,6 +69,11 @@
 
 /* Begin PBXFileReference section */
 		0090C7DA0DBFC4F92DC3FDF0 /* Pods-KOFM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KOFM.release.xcconfig"; path = "Pods/Target Support Files/Pods-KOFM/Pods-KOFM.release.xcconfig"; sourceTree = "<group>"; };
+		04D5309A228AC3AF00A7C755 /* YYWeakProxy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYWeakProxy.m; sourceTree = "<group>"; };
+		04D5309B228AC3AF00A7C755 /* YYFPSLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYFPSLabel.m; sourceTree = "<group>"; };
+		04D5309C228AC3AF00A7C755 /* YYWeakProxy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYWeakProxy.h; sourceTree = "<group>"; };
+		04D5309D228AC3AF00A7C755 /* YYFPSLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYFPSLabel.h; sourceTree = "<group>"; };
+		04D530A0228AC4E300A7C755 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		099352B477B0270D47CB7323 /* libPods-KOFM.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KOFM.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FE6F39C22B95B4A13142AAC /* libPods-KOFMTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KOFMTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		50A74662C6D2CBCC1C6F24C2 /* libPods-KOFMUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KOFMUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -175,6 +183,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04D53098228AC35100A7C755 /* Third Party */ = {
+			isa = PBXGroup;
+			children = (
+				04D53099228AC39900A7C755 /* FPS */,
+			);
+			path = "Third Party";
+			sourceTree = "<group>";
+		};
+		04D53099228AC39900A7C755 /* FPS */ = {
+			isa = PBXGroup;
+			children = (
+				04D5309D228AC3AF00A7C755 /* YYFPSLabel.h */,
+				04D5309B228AC3AF00A7C755 /* YYFPSLabel.m */,
+				04D5309C228AC3AF00A7C755 /* YYWeakProxy.h */,
+				04D5309A228AC3AF00A7C755 /* YYWeakProxy.m */,
+			);
+			path = FPS;
+			sourceTree = "<group>";
+		};
 		2F7D61ABD8550061586FEBCF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -241,6 +268,7 @@
 		5D2CD45D21B8DA1000AB9081 = {
 			isa = PBXGroup;
 			children = (
+				04D530A0228AC4E300A7C755 /* README.md */,
 				5D2CD46821B8DA1000AB9081 /* KOFM */,
 				5D2CD48121B8DA1100AB9081 /* KOFMTests */,
 				5D2CD48C21B8DA1100AB9081 /* KOFMUITests */,
@@ -268,6 +296,7 @@
 				5DEB9CE421BA3F1200EF7E1D /* Manager */,
 				5D8245E221C1FE5600DC793C /* Resource */,
 				5D2CD49B21B8DFC600AB9081 /* Supporting Files */,
+				04D53098228AC35100A7C755 /* Third Party */,
 			);
 			path = KOFM;
 			sourceTree = "<group>";
@@ -618,6 +647,7 @@
 			files = (
 				5D2CD47321B8DA1100AB9081 /* Assets.xcassets in Resources */,
 				5D8245E621C1FEA400DC793C /* liveRadioCellPoint@2x.png in Resources */,
+				04D530A1228AC4E300A7C755 /* README.md in Resources */,
 				5D8245E721C1FEA400DC793C /* liveRadioCellPoint@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -702,6 +732,7 @@
 			files = (
 				5D29CAA021DDAC0A0061AACE /* KORecommendSpecialColumnItem.m in Sources */,
 				5D2CD47921B8DA1100AB9081 /* main.m in Sources */,
+				04D5309F228AC3AF00A7C755 /* YYFPSLabel.m in Sources */,
 				5D0B6D7521BE9CE600CF3FF8 /* UIColor+KOExtension.m in Sources */,
 				5DB76EA621BA834200FF047E /* KOMainModuleAPI.m in Sources */,
 				5D3EF3F721DB4277005CEE03 /* KOBannerView.m in Sources */,
@@ -728,6 +759,7 @@
 				5DB76EAE21BA883300FF047E /* UIImage+KOExtension.m in Sources */,
 				5D29CAA321DDACE30061AACE /* KORecommendSpecialColumnCell.m in Sources */,
 				5D3EF3FF21DB5646005CEE03 /* KORecommendBannerCell.m in Sources */,
+				04D5309E228AC3AF00A7C755 /* YYWeakProxy.m in Sources */,
 				5DB76E9321BA799C00FF047E /* KOHomeTabItem.m in Sources */,
 				5DC8B10921BBA38000341E8C /* KORecommendGroupItem.m in Sources */,
 			);

@@ -9,6 +9,8 @@
 #import "KOTabBarController.h"
 #import "KONavigationController.h"
 
+#import "YYFPSLabel.h"
+
 #import "UIImage+KOExtension.h"
 
 @implementation KOTabBarController
@@ -45,6 +47,19 @@ isRequiredNavController: (BOOL)isRequired
     [super viewDidLoad];
     
     self.view.backgroundColor = [UIColor whiteColor];
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+    [super viewDidAppear:animated];
+    
+#ifdef DEBUG
+    UIWindow *window = [UIApplication sharedApplication].keyWindow;
+    window.windowLevel = UIWindowLevelNormal;
+    CGFloat y = window.bounds.size.height * 0.618;
+    YYFPSLabel *fpsLabel = [[YYFPSLabel alloc] initWithFrame:CGRectMake(20, y, 50, 30)];
+    [window addSubview:fpsLabel ];
+#endif
 }
 
 @end
